@@ -20,18 +20,18 @@
 
 <body>
 
-  <div class="d-flex" id="wrapper">
+<div class="d-flex" id="wrapper">
 
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Ndelok Film </div>
-      <div class="list-group list-group-flush">
-        <a href="http://t.me/downton21" class="list-group-item list-group-item-action bg-light">Request & Report link error via telegram</a>
-      </div>
+<!-- Sidebar -->
+<div class="bg-light border-right" id="sidebar-wrapper">
+  <div class="sidebar-heading">Ndelok Film</div>
+    <div class="list-group list-group-flush">
+      <a href="http://t.me/downton21" class="list-group-item list-group-item-action bg-light">Request & Report link error via telegram</a>
     </div>
-    <!-- /#sidebar-wrapper -->
+</div>
+<!-- /#sidebar-wrapper -->
 
-    <!-- Page Content -->
+<!-- Page Content -->
 <div id="page-content-wrapper">
   <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <button class="btn btn-primary" id="menu-toggle">Menu</button>
@@ -70,13 +70,16 @@
 
 <!-- iframe -->
 <div class="container padding-14px">
-<div class="drive-responsive"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://youtube.com/embed/fl_kzTQvPVw" name="iframe_a" allowfullscreen></iframe></div> 
-<div class="tab">
-  <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Movie')" id="defaultOpen">Movie</button>
-  <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Drama Episode')">Drama Episode</button>
-  <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Anime/Kartun')">Anime/Kartun</button>
-  <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Cara Download</a>
-<div class="collapse" id="collapseExample" style="margin:10px 0px;">
+  <div class="drive-responsive"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://youtube.com/embed/fl_kzTQvPVw" name="iframe_a" allowfullscreen></iframe></div> 
+<!-- /iframe-->
+
+  <!-- Tombol Kategori -->
+  <div class="tab">
+    <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Movie')" id="defaultOpen">Movie</button>
+    <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Drama Episode')">Drama Episode</button>
+    <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Anime/Kartun')">Anime/Kartun</button>
+    <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Cara Download</a>
+  <div class="collapse" id="collapseExample" style="margin:10px 0px;">
   <div class="card card-body hitam">
     Cara untuk download film:<br>
     1. Klik download (untuk mengCopy atau menyalin link).<br>
@@ -85,39 +88,121 @@
   </div>
 </div>
 </div>
-<br>
-<input style="margin: 0px;" class="form-control" id="myInput" type="text" placeholder="Cari film berdasarkan judul, genre, negara atau tahun">
-<br>
-<div id="Movie" class="tabcontent">
+  <br>
+  <input style="margin: 0px;" class="form-control" id="myInput" type="text" placeholder="Cari film berdasarkan judul, genre, negara atau tahun">
+  <br>
+  <!-- /Tombol kategori -->
+
+  <!-- MOVIE -->
+  <div id="Movie" class="tabcontent">
   <ul class="list-group" id="myList">
+    <li class="list-group-item">
+      <a>Coming Soon<br>
+      <code>Coming Soon</code></a>
+      <br>
+      <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/xxxxxx" target="iframe_a">Trailer</a>
+      <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/xxxxxxxx/preview" target="iframe_a">Play</a>
+      <p class="hide" id="xxxxx">xxxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a>
+    </li>
     <li class="list-group-item">
       <a>Hacker (2019)<br>
       <code>97 min | Action,Family | Denmark</code></a>
       <br>
       <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/1VxDupdPLlg" target="iframe_a">Trailer</a>
-      <a class="btn btn-warning btn-sm" href="https://imdb.com/title/tt8243160/">IMDb</a>
       <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1AL5iM-KaL_0XEg7XBzyIefx8giaG3d_k/preview" target="iframe_a">Play</a>
-      <p class="hide" id="hckr34">https://semawur.com/IuwVI2</p><a onclick="copyTo('#hckr34')"><button class="btn btn-success btn-sm">Download</button></a>
+      <p class="hide" id="hckr34">https://bit.ly/2HgIG9G</p><a onclick="copyTo('#hckr34')"><button class="btn btn-success btn-sm">Download</button></a>
     </li>
     <li class="list-group-item">
       <a>The Great Illusionist(2020)<br>
       <code>87 min | Adventure, Fantasy | China</code></a>
       <br>
       <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/rjO_xBGvrPI" target="iframe_a">Trailer</a>
-      <a class="btn btn-warning btn-sm" href="https://imdb.com/title/tt12839498/">IMDb</a>
       <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1IxNK2bWo92wcSni3xQENTra6OoM3-ZiP/preview" target="iframe_a">Play</a>
-      <p class="hide" id="tgi1">https://semawur.com/IuwVI2</p><a onclick="copyTo('#tgi1')"><button class="btn btn-success btn-sm">Download</button></a>
+      <p class="hide" id="tgi1">https://bit.ly/3o60cOF</p><a onclick="copyTo('#tgi1')"><button class="btn btn-success btn-sm">Download</button></a>
     </li>
   </ul>
 </div>
-<div id="Drama Episode" class="tabcontent">
+
+  <!-- Drama Episode -->
+  <div id="Drama Episode" class="tabcontent">
   <ul class="list-group" id="myList">
+    <li class="list-group-item">
+      <a>Coming Soon<br>
+      <code>Coming Soon</code></a>
+      <br>
+      <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/xxxxx" target="iframe_a">Trailer</a>
+      <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#xxxxx" role="button" aria-expanded="false" aria-controls="collapseExample">Play/Downton</a>
+        <div class="collapse" id="xxxxx" style="margin:10px 0px;">
+          <div class="card card-body hitam">
+             <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">Episode</th>
+                    <th scope="col">Nonton</th>
+                    <th scope="col">Download</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><a href="https://drive.google.com/file/d/18cuHrneoq_WKwESJUG0Z3lwbpomW1D_M/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
+                    <td><p class="hide" id="xxxxx">xxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><a href="https://drive.google.com/file/d/1WGUP7WoKmspw7mGkcOt2nvPumXumQf9n/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
+                    <td><p class="hide" id="ktk2">xxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><a href="https://drive.google.com/file/d/1zpXrfn-RYevmr7yC6Ji7wdfvhnPV-cmL/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
+                    <td><p class="hide" id="xxxxx">xxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td><a href="https://drive.google.com/file/d/1v9_tWO2CDxJ78h4r9-6Gtr-FhZ1Tx0up/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
+                    <td><p class="hide" id="xxxxx">xxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td><a href="https://drive.google.com/file/d/1ve2YH9dfvfNAKDVsqSoMr-rImsra3ees/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
+                    <td><p class="hide" id="xxxxx">xxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td><a href="https://drive.google.com/file/d/1ck6X2QZoZSWUHKkwoHO8NfaRlqej0mRW/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
+                    <td><p class="hide" id="xxxxx">xxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td><a href="https://drive.google.com/file/d/1qsFP3j5lgM4lfZLjYU8y8tKT0xmjn_sM/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
+                    <td><p class="hide" id="xxxxx">xxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td><a href="https://drive.google.com/file/d/1UwMvvAl6BT5yp38ol_q03RLgZtlXUqlI/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
+                    <td><p class="hide" id="xxxxx">xxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td><a href="https://drive.google.com/file/d/1Dc5w--AS1GNe-jsK8FlSzNjENJeT5Ouk/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
+                    <td><p class="hide" id="xxxxx">xxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td><a href="https://drive.google.com/file/d/1QreDAgQzhZdWBM8_svzcr-HmvI83EYnX/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
+                    <td><p class="hide" id="xxxxx">xxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </li>
     <li class="list-group-item">
       <a>Kiss that Kills (2018) Drama Complete 10 Episode<br>
       <code>54 min | Adventure, Drama | Japan</code></a>
       <br>
       <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/3GZRbkR2Log" target="iframe_a">Trailer</a>
-      <a class="btn btn-warning btn-sm" href="https://imdb.com/title/tt7674974/">IMDb</a>
       <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#ktk" role="button" aria-expanded="false" aria-controls="collapseExample">Play/Downton</a>
         <div class="collapse" id="ktk" style="margin:10px 0px;">
           <div class="card card-body hitam">
@@ -138,47 +223,47 @@
                   <tr>
                     <th scope="row">2</th>
                     <td><a href="https://drive.google.com/file/d/1WGUP7WoKmspw7mGkcOt2nvPumXumQf9n/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
-                    <td><p class="hide" id="ktk2">https://bit.ly/3jaecTG</p><a onclick="copyTo('#ktk1')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                    <td><p class="hide" id="ktk2">https://bit.ly/3jaecTG</p><a onclick="copyTo('#ktk2')"><button class="btn btn-success btn-sm">Download</button></a></td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
                     <td><a href="https://drive.google.com/file/d/1zpXrfn-RYevmr7yC6Ji7wdfvhnPV-cmL/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
-                    <td><p class="hide" id="ktk3">https://bit.ly/34fJwfG</p><a onclick="copyTo('#ktk1')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                    <td><p class="hide" id="ktk3">https://bit.ly/34fJwfG</p><a onclick="copyTo('#ktk3')"><button class="btn btn-success btn-sm">Download</button></a></td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
                     <td><a href="https://drive.google.com/file/d/1v9_tWO2CDxJ78h4r9-6Gtr-FhZ1Tx0up/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
-                    <td><p class="hide" id="ktk4">https://bit.ly/2IOQO1D</p><a onclick="copyTo('#ktk1')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                    <td><p class="hide" id="ktk4">https://bit.ly/2IOQO1D</p><a onclick="copyTo('#ktk4')"><button class="btn btn-success btn-sm">Download</button></a></td>
                   </tr>
                   <tr>
                     <th scope="row">5</th>
                     <td><a href="https://drive.google.com/file/d/1ve2YH9dfvfNAKDVsqSoMr-rImsra3ees/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
-                    <td><p class="hide" id="ktk5">https://bit.ly/3m0es9u</p><a onclick="copyTo('#ktk1')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                    <td><p class="hide" id="ktk5">https://bit.ly/3m0es9u</p><a onclick="copyTo('#ktk5')"><button class="btn btn-success btn-sm">Download</button></a></td>
                   </tr>
                   <tr>
                     <th scope="row">6</th>
                     <td><a href="https://drive.google.com/file/d/1ck6X2QZoZSWUHKkwoHO8NfaRlqej0mRW/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
-                    <td><p class="hide" id="ktk6">https://bit.ly/3m2vEeE</p><a onclick="copyTo('#ktk1')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                    <td><p class="hide" id="ktk6">https://bit.ly/3m2vEeE</p><a onclick="copyTo('#ktk6')"><button class="btn btn-success btn-sm">Download</button></a></td>
                   </tr>
                   <tr>
                     <th scope="row">7</th>
                     <td><a href="https://drive.google.com/file/d/1qsFP3j5lgM4lfZLjYU8y8tKT0xmjn_sM/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
-                    <td><p class="hide" id="ktk7">https://bit.ly/2IEIFwv</p><a onclick="copyTo('#ktk1')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                    <td><p class="hide" id="ktk7">https://bit.ly/2IEIFwv</p><a onclick="copyTo('#ktk7')"><button class="btn btn-success btn-sm">Download</button></a></td>
                   </tr>
                   <tr>
                     <th scope="row">8</th>
                     <td><a href="https://drive.google.com/file/d/1UwMvvAl6BT5yp38ol_q03RLgZtlXUqlI/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
-                    <td><p class="hide" id="ktk8">https://bit.ly/3ocFkVG</p><a onclick="copyTo('#ktk1')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                    <td><p class="hide" id="ktk8">https://bit.ly/3ocFkVG</p><a onclick="copyTo('#ktk8')"><button class="btn btn-success btn-sm">Download</button></a></td>
                   </tr>
                   <tr>
                     <th scope="row">9</th>
                     <td><a href="https://drive.google.com/file/d/1Dc5w--AS1GNe-jsK8FlSzNjENJeT5Ouk/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
-                    <td><p class="hide" id="ktk9">https://bit.ly/2FKti4C</p><a onclick="copyTo('#ktk1')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                    <td><p class="hide" id="ktk9">https://bit.ly/2FKti4C</p><a onclick="copyTo('#ktk9')"><button class="btn btn-success btn-sm">Download</button></a></td>
                   </tr>
                   <tr>
                     <th scope="row">10</th>
                     <td><a href="https://drive.google.com/file/d/1QreDAgQzhZdWBM8_svzcr-HmvI83EYnX/preview" target="iframe_a" class="btn btn-primary btn-sm">Play</a></td>
-                    <td><p class="hide" id="ktk10">https://bit.ly/31HjOz5</p><a onclick="copyTo('#ktk1')"><button class="btn btn-success btn-sm">Download</button></a></td>
+                    <td><p class="hide" id="ktk10">https://bit.ly/31HjOz5</p><a onclick="copyTo('#ktk10')"><button class="btn btn-success btn-sm">Download</button></a></td>
                   </tr>
               </tbody>
             </table>
@@ -187,31 +272,39 @@
     </li>
   </ul>
 </div>
-<div id="Anime/Kartun" class="tabcontent">
+
+  <!-- Anime/Kartun -->
+  <div id="Anime/Kartun" class="tabcontent">
   <ul class="list-group" id="myList">
+    <li class="list-group-item">
+      <a>Coming Soon<br>
+      <code>Coming Soon</code></a>
+      <br>
+      <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/xxxxxx" target="iframe_a">Trailer</a>
+      <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/xxxxxxxx/preview" target="iframe_a">Play</a>
+      <p class="hide" id="xxxxx">xxxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a>
+    </li>
     <li class="list-group-item">
       <a>Detective Conan: The Darkest Nightmare (2016)<br>
       <code>112 min | Animation, Action, Adventure | Japan</code></a>
       <br>
       <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/XiEamTc1R5A" target="iframe_a">Trailer</a>
-      <a class="btn btn-warning btn-sm" href="https://imdb.com/title/tt4954660/">IMDb</a>
       <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/17x9IJJembalrwekop1zuqz6TldPg_BVZ/preview" target="iframe_a">Play</a>
-      <p class="hide" id="detectiveconan">https://semawur.com/xju43s1</p><a onclick="copyTo('#detectiveconan')"><button class="btn btn-success btn-sm">Download</button></a>
+      <p class="hide" id="detectiveconan">https://bit.ly/2T9XqJE</p><a onclick="copyTo('#detectiveconan')"><button class="btn btn-success btn-sm">Download</button></a>
     </li>
     <li class="list-group-item">
       <a>Detective Conan: Sunflowers of Inferno (2015)<br>
       <code>112 min | Animation, Action, Adventure | Japan</code></a>
       <br>
-      <a class="btn btn-warning btn-sm"href="https://imdb.com/title/tt3737650/">IMDb</a>
       <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/10l9En8C-Q22M4CXESfnyocrc-UEVCXaU/preview" target="iframe_a">Play</a>
-      <p class="hide" id="detectiveconansun">https://semawur.com/TwjEE4iZ48A</p><a onclick="copyTo('#detectiveconansun')"><button class="btn btn-success btn-sm">Download</button></a>
+      <p class="hide" id="detectiveconansun">https://bit.ly/3kjUeXZ</p><a onclick="copyTo('#detectiveconansun')"><button class="btn btn-success btn-sm">Download</button></a>
     </li>
   </ul>
 </div>
 </div>
 </div>
     <!-- /#page-content-wrapper -->
-    
+</div>
   <!-- /#wrapper -->
 </body>
 <!-- Bootstrap core JavaScript -->
