@@ -1,11 +1,20 @@
+<!-- Bootstrap core CSS -->
+<link href="https://raw.githack.com/cakfadil/ndelokfilm/main/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Bootstrap core CSS -->
-  <link href="https://raw.githack.com/cakfadil/ndelokfilm/main/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="https://raw.githack.com/cakfadil/ndelokfilm/main/simple.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="https://raw.githack.com/cakfadil/ndelokfilm/main/simple.css" rel="stylesheet">
-
+<!-- iframe -->
+<div class="container">
 <div class="drive-responsive"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://youtube.com/embed/fl_kzTQvPVw" name="iframe_a" allowfullscreen></iframe></div>
+<!-- /iframe-->
+<br>
+
+<!-- search -->
+<input style="margin: 0px;" class="form-control" id="myInput" type="text" placeholder="Cari film berdasarkan judul, genre, negara atau tahun">
+<!-- search -->
+<br>
+
 <ul class="list-group" id="myList">
     <li class="list-group-item">
       <a>Coming Soon<br>
@@ -32,3 +41,26 @@
       <p class="hide" id="tgi1">https://bit.ly/3o60cOF</p><a onclick="copyTo('#tgi1')"><button class="btn btn-success btn-sm">Download</button></a>
     </li>
 </ul>
+
+<!-- list film -->
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<!-- clipboard -->
+<script>
+function copyTo(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  alert("Link tersalin, silahkan buka link di browser anda");
+}
+</script>
