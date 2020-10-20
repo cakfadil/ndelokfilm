@@ -105,3 +105,6 @@ iframe {
 
 .hide{display:none;
 }
+.collapse {
+  margin: 8px;
+}
