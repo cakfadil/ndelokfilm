@@ -67,24 +67,55 @@
         <h1 class="mt-4">Selamat datang</h1>
         <p>Nonton film sepuasnya hanya di <code>"ndelok film"</code>, penyedia film terlengkap subtitle Indonesia.</p>
         <p>Anda juga dapat <code>mendownload</code> film, pada <code>link</code> yang telah kami sediakan.</p>
-  <p>
-    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Link with href</a>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-target</button>
-  </p>
+</div>
+
+<!-- iframe -->
+<div class="container padding-14px">
+<div class="drive-responsive"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://drive.google.com/file/d/17x9IJJembalrwekop1zuqz6TldPg_BVZ/preview" name="iframe_a" allowfullscreen></iframe></div> 
+<div class="tab">
+  <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Movie')" id="defaultOpen">Movie</button>
+  <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Drama Episode')">Drama Episode</button>
+  <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Anime/Kartun')">Anime/Kartun</button>
+  <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Cara Download</a>
 <div class="collapse" id="collapseExample">
   <div class="card card-body hitam">
-    Cara untuk download film:
-    1. Klik download (untuk mengCopy atau menyalin link).
-    2. Paste atau tempel pada kolom url browser anda.
-    3. Klik tombol download (happy download)
+    Cara untuk download film:<br>
+    1. Klik download (untuk mengCopy atau menyalin link).<br>
+    2. Paste atau tempel pada kolom url browser anda.<br>
+    3. Klik tombol download (happy download).
   </div>
 </div>
-      </div>
-<!-- iframe -->
-  <div class="container padding-14px">
-<div class="drive-responsive"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://drive.google.com/file/d/17x9IJJembalrwekop1zuqz6TldPg_BVZ/preview" name="iframe_a" allowfullscreen></iframe></div> 
+</div>
+<br>
 <input class="form-control" id="myInput" type="text" placeholder="Cari film berdasarkan judul, genre, negara atau tahun">
 <br>
+<div id="Movie" class="tabcontent">
+  <ul class="list-group" id="myList">
+    <li class="list-group-item">
+      <a>Detective Conan: The Darkest Nightmare (2016) - <code>112 min | Animation, Action, Adventure | Japan</code></a>
+      <br>
+      <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/17x9IJJembalrwekop1zuqz6TldPg_BVZ/preview" target="iframe_a">Play</a>
+      <p class="hide" id="p1">https://semawur.com/xju43s1</p>
+      <a onclick="copyTo('#p1')"><button class="btn btn-success btn-sm">Download</button></a>
+      <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/XiEamTc1R5A" target="iframe_a">Trailer</a>
+      <a href="https://imdb.com/title/tt4954660/"><button class="btn btn-warning btn-sm">IMDb</button></a>
+    </li>
+  </ul>
+</div>
+<div id="Drama Episode" class="tabcontent">
+  <ul class="list-group" id="myList">
+    <li class="list-group-item">
+      <a>Detective Conan: The Darkest Nightmare (2016) - <code>112 min | Animation, Action, Adventure | Japan</code></a>
+      <br>
+      <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/17x9IJJembalrwekop1zuqz6TldPg_BVZ/preview" target="iframe_a">Play</a>
+      <p class="hide" id="p1">https://semawur.com/xju43s1</p>
+      <a onclick="copyTo('#p1')"><button class="btn btn-success btn-sm">Download</button></a>
+      <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/XiEamTc1R5A" target="iframe_a">Trailer</a>
+      <a href="https://imdb.com/title/tt4954660/"><button class="btn btn-warning btn-sm">IMDb</button></a>
+    </li>
+  </ul>
+</div>
+<div id="Anime/Kartun" class="tabcontent">
   <ul class="list-group" id="myList">
     <li class="list-group-item">
       <a>Detective Conan: The Darkest Nightmare (2016) - <code>112 min | Animation, Action, Adventure | Japan</code></a>
@@ -121,7 +152,25 @@
       <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/1VxDupdPLlg" target="iframe_a">Trailer</a>
       <a href="https://imdb.com/title/tt8243160/"><button class="btn btn-warning btn-sm">IMDb</button></a>
     </li>
-  </ul>  
+  </ul>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
   </div>
 </div>
     <!-- /#page-content-wrapper -->
