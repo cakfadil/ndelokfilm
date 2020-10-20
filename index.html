@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>Ndelok Film</title>
-
   <!-- Bootstrap core CSS -->
   <link href="https://raw.githack.com/cakfadil/ndelokfilm/main/bootstrap.min.css" rel="stylesheet">
-
   <!-- Custom styles for this template -->
-  <link href="https://raw.githack.com/cakfadil/ndelokfilm/main/simple.css" rel="stylesheet">
-
+  <link href="https://rawcdn.githack.com/cakfadil/ndelokfilm/668e61a039cb87d63979c131cd65b669787ebea9/simple.css" rel="stylesheet">
 </head>
 
 <body>
-
 <div class="d-flex" id="wrapper">
-
+  
 <!-- Sidebar -->
 <div class="bg-light border-right" id="sidebar-wrapper">
   <div class="sidebar-heading">Ndelok Film</div>
@@ -62,16 +55,10 @@
           </ul>
         </div>
       </nav>
-  <div class="container-fluid">
+<div class="container-fluid">
     <h1 class="mt-4">Selamat datang</h1>
     <p>Nonton film sepuasnya hanya di <code>"ndelok film"</code>, penyedia film terlengkap subtitle Indonesia.</p>
     <p>Anda juga dapat <code>mendownload</code> film, pada <code>link</code> yang telah kami sediakan.</p>
-</div>
-
-<!-- iframe -->
-<div class="container">
-  <div class="drive-responsive"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://youtube.com/embed/fl_kzTQvPVw" name="iframe_a" allowfullscreen></iframe></div>
-<!-- /iframe-->
 
   <!-- Tombol Kategori -->
   <div class="tab">
@@ -79,18 +66,17 @@
     <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Drama Episode')">Drama Episode</button>
     <button class="btn btn-primary btn-sm" onclick="openCity(event, 'Anime/Kartun')">Anime/Kartun</button>
     <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Cara Download</a>
-  <div class="collapse" id="collapseExample" style="margin:10px 0px;">
-  <div class="card card-body hitam">
+    <div class="collapse" id="collapseExample" style="margin:10px 0px;">
+      <div class="card card-body hitam">
     Cara untuk download film:<br>
     1. Klik download (untuk mengCopy atau menyalin link).<br>
     2. Paste atau tempel pada kolom url browser anda.<br>
     3. Klik tombol download (happy download).
+      </div>
+    </div>
   </div>
-</div>
-</div>
   <!-- /Tombol kategori -->
-  <br>
-  <input style="margin: 0px;" class="form-control" id="myInput" type="text" placeholder="Cari film berdasarkan judul, genre, negara atau tahun">
+</div>
   <br>
   <!-- MOVIE -->
   <div id="Movie" class="tabcontent">
@@ -290,28 +276,6 @@
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
-</script>
-<!-- list film -->
-<script>
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myList li").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
-<!-- clipboard -->
-<script>
-function copyTo(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
-  alert("Link tersalin, silahkan buka link di browser anda");
-}
 </script>
 <!-- kategori -->
 <script>
