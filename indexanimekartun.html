@@ -1,1 +1,83 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Index Movie</title>
+</head>
 
+
+
+<body>
+<!-- iframe -->
+<div class="container">
+<div class="drive-responsive2"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://youtube.com/embed/fl_kzTQvPVw" name="iframe_a" allowfullscreen></iframe></div>
+<!-- /iframe-->
+<!-- search -->
+<input style="margin: 0px;" class="form-control" id="myInput" type="text" placeholder="Cari film berdasarkan judul, genre, negara atau tahun">
+<!-- search -->
+<br>
+
+  <ul class="list-group" id="myList">
+    <li class="list-group-item">
+      <a>Coming Soon<br>
+      <code>Coming Soon</code></a>
+      <br>
+      <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/xxxxxx" target="iframe_a">Trailer</a>
+      <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/xxxxxxxx/preview" target="iframe_a">Play</a>
+      <p class="hide" id="xxxxx">xxxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a>
+    </li>
+    <li class="list-group-item">
+      <a>Detective Conan: The Darkest Nightmare (2016)<br>
+      <code>112 min | Animation, Action, Adventure | Japan</code></a>
+      <br>
+      <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/XiEamTc1R5A" target="iframe_a">Trailer</a>
+      <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/17x9IJJembalrwekop1zuqz6TldPg_BVZ/preview" target="iframe_a">Play</a>
+      <p class="hide" id="detectiveconan">https://bit.ly/2T9XqJE</p><a onclick="copyTo('#detectiveconan')"><button class="btn btn-success btn-sm">Download</button></a>
+    </li>
+    <li class="list-group-item">
+      <a>Detective Conan: Sunflowers of Inferno (2015)<br>
+      <code>112 min | Animation, Action, Adventure | Japan</code></a>
+      <br>
+      <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/10l9En8C-Q22M4CXESfnyocrc-UEVCXaU/preview" target="iframe_a">Play</a>
+      <p class="hide" id="detectiveconansun">https://bit.ly/3kjUeXZ</p><a onclick="copyTo('#detectiveconansun')"><button class="btn btn-success btn-sm">Download</button></a>
+    </li>
+  </ul>
+</body>
+</html>
+
+
+
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://raw.githack.com/cakfadil/ndelokfilm/main/jquery.min.js"></script>
+<script src="https://raw.githack.com/cakfadil/ndelokfilm/main/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core CSS -->
+<link href="https://raw.githack.com/cakfadil/ndelokfilm/main/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="https://rawcdn.githack.com/cakfadil/ndelokfilm/9371411d12acae447f77349fb986d2d3b006eb41/simple.css" rel="stylesheet">
+<!-- list film -->
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<!-- clipboard -->
+<script>
+function copyTo(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  alert("Link tersalin, silahkan buka link di browser anda");
+}
+</script>
