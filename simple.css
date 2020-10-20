@@ -69,7 +69,7 @@ body {
 .drive-responsive {
   position: relative;
   padding-bottom: 56.25%;
-  height: 0;
+  height: 100%;
   overflow: hidden;
   text-align:center;
   margin:0 auto;
