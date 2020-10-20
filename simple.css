@@ -100,8 +100,8 @@ iframe {
   position:absolute;
   top:0;left:0;
   width:100%;
-  height:auto;
-  padding:10px 15px;
+  height:1200px;
+  padding:8px 15px;
 }
 
 .hide{display:none;
