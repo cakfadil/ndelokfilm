@@ -105,6 +105,6 @@ iframe {
 
 .hide{display:none;
 }
-#collapseExample {
-  margin: 8px;
+.form-control {
+  margin: 10px 0px;
 }
