@@ -8,13 +8,13 @@
 </head>
 
 <body>
-<!-- iframe -->
+<!-- Iframe -->
 <div class="container">
 <div class="drive-responsive2"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://youtube.com/embed/fl_kzTQvPVw" name="iframe_a" allowfullscreen></iframe></div>
-<!-- /iframe-->
-<!-- search -->
+<!-- /Iframe-->
+<!-- Search -->
 <input style="margin: 0px;" class="form-control" id="myInput" type="text" placeholder="Cari film berdasarkan judul, genre, negara atau tahun">
-<!-- search -->
+<!-- /Search -->
 <br>
 
 
@@ -25,7 +25,7 @@
 
 
 
-
+<!-- Link film -->
 <ul class="list-group" id="myList">
     <li class="list-group-item">
       <a>Coming Soon<br>
@@ -33,6 +33,13 @@
       <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/xxxxxx" target="iframe_a">Trailer</a>
       <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/xxxxxxxx/preview" target="iframe_a">Play</a>
       <p class="hide" id="xxxxx">xxxxxx</p><a onclick="copyTo('#xxxxx')"><button class="btn btn-success btn-sm">Download</button></a>
+    </li>
+    <li class="list-group-item">
+      <a>A Choo (2020)<br>
+      <code>102 min | Fantasy, Romance | Taiwan</code></a><br>
+      <a class="btn btn-danger btn-sm" href="https://youtube.com/embed/eY3z4MXdiAI" target="iframe_a">Trailer</a>
+      <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1UCS3IrITcNqom3E19cSm2KwhbtSH76jm/preview" target="iframe_a">Play</a>
+      <p class="hide" id="achoo13">https://bit.ly/35lLjyW</p><a onclick="copyTo('#achoo13')"><button class="btn btn-success btn-sm">Download</button></a>
     </li>
     <li class="list-group-item">
       <a>Hacker (2019)<br>
@@ -49,7 +56,7 @@
       <p class="hide" id="tgi1">https://bit.ly/3o60cOF</p><a onclick="copyTo('#tgi1')"><button class="btn btn-success btn-sm">Download</button></a>
     </li>
 </ul>
-
+<!-- /Link film -->
 
 
 
@@ -65,11 +72,14 @@
 <!-- Bootstrap core JavaScript -->
 <script src="https://raw.githack.com/cakfadil/ndelokfilm/main/jquery.min.js"></script>
 <script src="https://raw.githack.com/cakfadil/ndelokfilm/main/bootstrap.bundle.min.js"></script>
+<!-- /Bootstrap core JavaScript -->
 <!-- Bootstrap core CSS -->
 <link href="https://raw.githack.com/cakfadil/ndelokfilm/main/bootstrap.min.css" rel="stylesheet">
-<!-- Custom styles for this template -->
+<!-- /Bootstrap core CSS -->
+<!-- Simple css -->
 <link href="https://raw.githack.com/cakfadil/ndelokfilm/main/simple.css" rel="stylesheet">
-<!-- list film -->
+<!-- /Simple css -->
+<!-- Script list film -->
 <script>
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
@@ -80,7 +90,8 @@ $(document).ready(function(){
   });
 });
 </script>
-<!-- clipboard -->
+<!-- /Script list film -->
+<!-- Script clipboard -->
 <script>
 function copyTo(element) {
   var $temp = $("<input>");
@@ -91,5 +102,6 @@ function copyTo(element) {
   alert("Link tersalin, silahkan buka link di browser anda");
 }
 </script>
+<!-- /Script clipboard -->
 </body>
 </html>
