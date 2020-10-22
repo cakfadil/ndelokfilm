@@ -28,17 +28,10 @@
 		width: 650px;
 		color: white;
 	}
-	div.list {
-		background-color: #253235;
-		border: none;
-	}
-	div.player {
-
-	}
-.drive-responsive {
+.drive-responsive1 {
   position: relative;
   padding-bottom: 56.25%;
-  height: 0;
+  height: 100px;
   overflow: hidden;
   text-align:center;
   margin:0 auto;
@@ -46,7 +39,18 @@
   border: none;
   margin-bottom: 6px;
 }
-.drive-responsive iframe {
+.drive-responsive2 {
+position: relative;
+padding-bottom: 56.25%;
+height: 0;
+overflow: hidden;
+text-align:center;
+margin:0 auto;
+width:100%;
+border: none;
+margin-bottom: 6px;
+}
+.drive-responsive2 iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -57,7 +61,7 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-.drive-responsive::before {
+.drive-responsive2::before {
   content: "";
   position: absolute;
   top: 0;
