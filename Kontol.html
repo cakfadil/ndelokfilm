@@ -1,145 +1,9 @@
-<style>
-	body {
-		background-color: #253235;
-		color: red;
-	}
-	th,td {
-		padding:2px;
-	}
-	th {
-		text-align:left;
-		font-size: 14px;
-	}
-	td {
-		font-size: 14px;
-	}
-	a.btn {
-		border-radius: 3px;
-		padding: 5 10;
-		color: white;
-		cursor: pointer;
-	}
-	a.btnp {
-		background-color: #0088cc;
-	}
-	a.btnd {
-		background-color: #FF0000;
-	}
-	table.default {
-		width: 650px;
-		color: white;
-	}
-	div.list {
-		background-color: #253235;
-		border: none;
-	}
-	div.player {
-		border-radius: 8px;
-		border: none;
-		height: 700px;
-		background-color: #253235;
-	}
-.drive-responsive {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  text-align:center;
-  margin:0 auto;
-  width:100%;
-  border: none;
-  margin-bottom: 6px;
-}
-.drive-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  z-index: 1;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-.drive-responsive::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 80px;
-  height: 80px;
-  opacity: 0;
-  z-index: 2;
-}
-iframe {
-  border:0;
-  position:absolute;
-  top:0;left:0;
-  width:100%;
-  height:100%;
-}
-code {
-	color: #F4CE8F;
-}
-input {
-	padding: 6px;
-	margin: 6px 0px;
-	width: 100%;
-	color: #F4CE8F;
-	border: none;
-	border-radius: 6px;
-}
-#myInput {
-	background-color: black;
-	border: none;
-}
-.active, .collapse:hover {
-  background-color: #253235;
-}
-.content {
-  padding: 0 10px;
-  display: none;
-  overflow: hidden;
-  background-color: #253235;
-  color: #F4CE8F;
-  font-size: 10px;
-}
-div.header {
-	margin-bottom: 6px;
-}
-div.about {
-	background-color: black;
-	color: white;
-	padding: 8px;
-}
-	@media only screen and (min-width: 600px) {
-  /* For tablets: */
-
-}
-	@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  table.default {
-  	width: 1000px;
-  }
-	th,td {
-		padding:6px;
-	}
-	th {
-		text-align:left;
-		font-size: 20px;
-	}
-	td {
-		font-size: 20px;
-	}
-	a.btn {
-		border-radius: 6px;
-		padding: 10 15;
-	}
-	div.header {
-		margin-bottom: 16px;
-	}
-}
-</style>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="ngopifilm.css" rel="stylesheet">
+</head>
+<body>
 <div class="header">
 	<a class="btn btnp">Group Telegram</a>
 	<a class="collapse btn btnd">Cara Download</a>
@@ -147,53 +11,26 @@ div.about {
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</div>
 </div>
-<input id="myInput" type="text" placeholder="Telusuri.... title, year, genre....">
-<div class="player">
-<div class="drive-responsive">
-	<iframe class="drive-responsive" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen; src="https://drive.google.com/file/d/1I3hRDtCL2pNm-S1Av6XNoZfPR54Q0h3X/preview" allowfullscreen name="player"></iframe>
+<div class="index"
+<iframe src="/indexngopifilm.html"></iframe>
 </div>
-<div class="list" style="width:100%;overflow:auto;">
-  <table class="default" id="myTable">
-    <tr>
-      <td><a class="btn btnp">play</a></td>
-      <td><a class="btn btnd">download</a></td>
-      <td>The Girl Played Fire (2009)<br><code>129 min | Crime, Drama, Mystery | Sweden, Denmark, Germany</code></td>
-    </tr>
-    <tr>
-      <td><a class="btn btnp">play</a></td>
-      <td><a class="btn btnd">download</a></td>
-      <td>Bumblebee (2018)<br><code>114 min | Action, Adventure, Sci-Fi | China, USA</code></td>
-    </tr>
-    <tr>
-      <td><a class="btn btnp">play</a></td>
-      <td><a class="btn btnd">download</a></td>
-      <td>The Girl Played Fire (2009)<br><code>129 min | Crime, Drama, Mystery | Sweden, Denmark, Germany</code></td>
-    </tr>
-    <tr>
-      <td><a class="btn btnp">play</a></td>
-      <td><a class="btn btnd">download</a></td>
-      <td>Bumblebee (2018)<br><code>114 min | Action, Adventure, Sci-Fi | China, USA</code></td>
-    </tr>
-    <tr>
-      <td><a class="btn btnp">play</a></td>
-      <td><a class="btn btnd">download</a></td>
-      <td>The Girl Played Fire (2009)<br><code>129 min | Crime, Drama, Mystery | Sweden, Denmark, Germany</code></td>
-    </tr>
-    <tr>
-      <td><a class="btn btnp">play</a></td>
-      <td><a class="btn btnd">download</a></td>
-      <td>Bumblebee (2018)<br><code>114 min | Action, Adventure, Sci-Fi | China, USA</code></td>
-    </tr>
-    </table>
-</div>
-</div>
-<div class="about">
+<footer>
 
-	<p><b>About me</b></p>
-	<p><code>NgopiFilm</code> - Koleksi film untuk anda</p>
-
+	<div class="grid-container">
+  <div class="item1">
+  <p><b>About me</b></p>
+  <p><code>NgopiFilm</code> - Koleksi film untuk anda</p>
+  <p></p>
+  </div>
+  <div class="item2">
+  <p><b>Donasi</b>
+  <p>Akankah Anda..?<br>Maukah Anda..?<br>Terima Kasih anda telah mensupport kami.</p>
+  <p>BCA - 8798675</p>
+  </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</footer>
+</body>
 <script>
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
@@ -220,3 +57,4 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+</html>
